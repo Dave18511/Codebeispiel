@@ -27,8 +27,6 @@ public class EmailSever {
     Email to = new Email(email);
     Content content = new Content("text/plain", "Welcome, \n here is your Password for your new Acount: \n " + password);
     Mail mail = new Mail(from, subject, to, content);
-
-    SendGrid sg = new SendGrid("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");
     Request request = new Request();
     try {
       request.setMethod(Method.POST);
